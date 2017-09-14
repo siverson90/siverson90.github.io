@@ -1,110 +1,88 @@
+/*style.css is organized first by HTML tags and is followed
+by classes. */
+
 body {
-  background-color: #ededed;
   width: 960px;
+  height: 845px;
   font-family: Georgia, Times, "Times New Roman",serif;
-  margin: 0px 20px 0px 20px
+  margin: 0px 20px 0px 20px;
 }
 
 h2 {
-  color: #00aea7;
+  color: #4aaaa5;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 h3 {
-  color: #00aea7;
+  color: #4aaaa5;
   float: center;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none; 
+  color: #777777;
+}
+
+p {
+  color:#777777;
 }
 
 footer {
   background-color: #666666;
   height:100px;
-  border-top: 10px solid #00aea7;
+  border-top: 10px solid #4aaaa5;
+  clear: both;
+  position: relative;
 }
 
 footer p {
     display: table;
     text-align: center;
+    color: white;
+    padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    color: #f0f0f0
 }
 
 button{
-  background-color: #00aea7;
+  background-color: #4aaaa5;
   color: #f0f0f0;
   font-size: 18px;
+  border: none;
 }
 
 form{
   text-align: left;
+  color: #777777;
 }
 
-.header-container {
-  background-color: white;
-  width: 960px;
-  height: 75px;
-  border-bottom: 2px solid #666666;
-  margin: 0;
-  padding: 2px 0px 0px 0px;
-}
-
-.nav-item-list{
-  float: right;
-  padding: 30px 30px;
-}
-
-.nav-item {
-  float: right;
-  margin-right: 5px;
-}
-
-.name{
-  float: left;
-  background-color: #00aea7; 
-  text-align: center;
-  color: white;
-  height: 55px;
-  margin-left: 50px;
-  padding-top: 20px;
-}
-
-.form-box {
-  width: 90%;
-  margin: 5px 0px;
-  text-align: left;
-}
-
-.gallery{
-  width: 40%;
-}
-
+/*static on each page*/
 .container {
   width: 960px;
   height: 650px;
   margin: 0px auto;
-}
-
-.profilePhoto {
-  float: left;
-  padding: 0px 5px 5px 5px;
-  margin: 0px 10px 10px 10px; 
-
+  background-color: #f0f0f0; 
 }
 
 .left-side {
   width: 500px;
   background-color: #ffffff;
-  margin: 25px 55px;
+  margin: 25px 20px 0px 55px;
   padding: 10px 15px 10px 15px;
   float: left;
+  border: 1px solid #ededed;
 }
 
 .right-side {
   width: 200px;
   background-color: #ffffff;
-  margin: 25px 30px;
-  padding: 10px 15px 10px 15px;
+  margin: 25px 55px 0px 20px;
+  padding: 20px;
   text-align: center;
-  float: left;
+  float: right;
+  border: 1px solid #ededed;
 }
 
 .socialBtn {
@@ -117,13 +95,101 @@ form{
 }
 
 .hr-left {
-  width: 465px;
-  margin-bottom: 20px;
-  float: left;
+  width: 100%;
+  margin-bottom: 5px;
 }
 
 .hr-right {
-  float: center;
-  width: 140px;
+  width: 100%;
+  margin-bottom: 5px;
 
 }
+
+/*Header classes*/
+
+.header-container {
+  background-color: white;
+  width: 960px;
+  height: 75px;
+  border-bottom: 2px solid #cccccc;
+  margin: 0;
+  padding: 2px 0px 0px 0px;
+}
+
+.nav-item-list{
+  float: right;
+  padding: 35px 55px 35px 0px;
+  text-decoration: none;
+}
+
+.nav-item {
+  float: right;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.nav-item-bar{
+  color: #e5e5e5;
+}
+
+.name{
+  float: left;
+  background-color: #4aaaa5; 
+  text-align: center;
+  color: white;
+  height: 45px;
+  margin-left: 55px;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*index.html specific*/
+.profilePhoto {
+  float: left;
+  padding: 0px 5px 5px 5px;
+  margin: 0px 10px 10px 10px; 
+
+}
+
+/*contact.html specific*/
+.form-box {
+  width: 100%;
+  margin: 10px 0px;
+  text-align: left;
+  color: #777777;
+}
+
+/*portfolio.html specific*/
+
+.gallery{
+  width: 100%;
+}
+
+.banner{
+  background-color: #4aaaa5;
+  position: relative;
+  bottom: 70px;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+
+.img-container{
+  float: left;
+  width: 45%;
+  height: 150px;
+  margin: 20px 10px;
+
+}
+
+
+/*playing with a sticky footer*/
+/*.footer-content {
+  flex: 1 0 auto;
+}*/
